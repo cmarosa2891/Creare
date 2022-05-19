@@ -23,15 +23,38 @@ nav {
     margin: 10px 10px 10px 10px;
 }
 
-.maincontainer {
+section {
     display: flex;
-    flex-direction: column;
-    height: 80vh;
+        flex-wrap: wrap;
+    height: 40vh;
+    border: 3px solid red;
+}
+aside {
+    background-image: url(images/celesteamarillo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+}
+header {
+    border: 3px solid pink;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.BlackJack {
+	font-family: BlackJack;
+}
+
+article {
+    border: 3px solid pink;
+    margin: 10px;
+    width: 70%;
 }
 
 .nav {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 100%;
     justify-content: flex-end;
     padding-right: 40px;
@@ -52,34 +75,6 @@ nav {
 
 .logo {
     height: 9vh;
-}
-
-.box1 {
-    display: flex;
-    border: 3px solid red;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-}
-
-.box2 {
-    border: 3px solid orange;
-    width: auto;
-    margin: auto;
-}
-
-.box3 {
-    display: flex;
-    border: 3px solid red;
-    width: 50px;
-    height: 50px;
-    margin: auto;
-}
-
-.box4 {
-    border: 3px solid orange;
-    width: auto;
-    margin: auto;
 }
 
 footer {

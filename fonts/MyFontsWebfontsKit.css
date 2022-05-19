@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4867560, 2022-05-19T08:32:16-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BlackJack by Typadelic
+ * URL: https://www.myfonts.com/fonts/typadelic/black-jack/regular/
+ * Copyright: Copyright (c) TYPADELIC FONTS, 2002. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "BlackJack";
+  src: url('webFonts/BlackJack/font.woff2') format('woff2'), url('webFonts/BlackJack/font.woff') format('woff');
+}
+
