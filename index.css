@@ -9,29 +9,36 @@ html {
 }
 
 body {
-    height: 100vh;
-    width: 100%;
 
+    width: 100%;
+    background: rgb(114, 191, 206);
+    background: linear-gradient(90deg, rgba(114, 191, 206, 0.3508753843334209) 70%, rgba(59, 39, 111, 0.15199583251269255) 99%);
 }
 
 nav {
     display: flex;
     flex-flow: row;
-    height: 10vh;
+    height: 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-style: outset;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .maincontainer {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .nav {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     width: 100%;
     justify-content: flex-end;
     padding-right: 40px;
@@ -39,7 +46,7 @@ nav {
 
 .nav_logo {
     padding-left: 20px;
-    height: 15vh;
+    height: 15%;
 }
 
 .navitem {
@@ -48,68 +55,145 @@ nav {
     font-family: Tahoma, sans-serif;
     font-style: oblique;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    flex-basis: 2;
 }
 
 .logo {
+    display: flex;
     height: 9vh;
+    flex-basis: 1;
 }
 
-.box1 {
+h1 {
+    display: block;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.section1 {
     display: flex;
-    border: 3px solid red;
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 95%;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: outset;
+    border-radius: 20px;
 }
 
-.box2 {
-    border: 3px solid orange;
-    width: auto;
-    margin: auto;
-}
-
-.box3 {
+.section2 {
     display: flex;
-    border: 3px solid red;
-    width: 50px;
-    height: 50px;
-    margin: auto;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 95%;
+
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: outset;
+    border-radius: 20px;
 }
 
-.box4 {
-    border: 3px solid orange;
-    width: auto;
+.avatar {
+    margin: 3px;
+
+}
+
+h4 {
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+.social-links {
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.sec1a {
+
+    font-family: Tahoma, sans-serif;
+    border-radius: 10px;
     margin: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.sec1b {
+    font-family: Tahoma, sans-serif;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
 }
 
 footer {
     margin: 10px 10px 10px 10px;
     text-align: center;
+
 }
 
-/* Paleta de Colores
+@media screen and (max-width:880px) {
 
-/* CSS HEX */
-/* --maximum-blue-green: #28B6C4ff;
---cerise: #E83669ff;
---black: #000000ff;
---black-2: #000000ff;
---china-pink: #DF6EA8ff;
---white: #FFFFFFff;
---raisin-black: #2C2636ff;
---blush: #E85474ff;
---paolo-veronese-green: #039874ff;
---russian-violet: #2E2454ff; */
 
-/* SCSS RGB */
-/* $maximum-blue-green: rgba(40, 182, 196, 1);
-$cerise: rgba(232, 54, 105, 1);
-$black: rgba(0, 0, 0, 1);
-$black-2: rgba(0, 0, 0, 1);
-$china-pink: rgba(223, 110, 168, 1);
-$white: rgba(255, 255, 255, 1);
-$raisin-black: rgba(44, 38, 54, 1);
-$blush: rgba(232, 84, 116, 1);
-$paolo-veronese-green: rgba(3, 152, 116, 1);
-$russian-violet: rgba(46, 36, 84, 1);
- */
+    nav {
+        display: flex;
+        flex-flow: row;
+        position: fixed;
+        width: 95%;
+        height: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-style: outset;
+        margin: 10px 10px 10px 10px;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .section1 {
+        margin-top: 100px;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navitem {
+        display: block;
+        padding: 0px;
+        font-family: Tahoma, sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+    }
+}
