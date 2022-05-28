@@ -162,8 +162,12 @@ li {
     height: 400px;
     overflow: auto;
     overflow-y: 0;
+    
 }
 
+.content::-webkit-scrollbar {
+    width: 0.5em;
+}
 .avatar {
     margin: 3px;
 
@@ -178,14 +182,18 @@ h4 {
 }
 
 h5 {
+    width: 100%;
     font-family: Tahoma, sans-serif;
     font-style: oblique;
     font-weight: bold;
     margin: 5px;
     font-size: 1.3em;
+width: 100%;
+text-align: center;
+
 }
 
-.social-links {
+.social {
     margin: 5px;
     display: flex;
     justify-content: space-around;
