@@ -77,16 +77,57 @@ h1 {
     margin-top: 10px;
 }
 
+h2 {
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.5em;
+}
+
+h5 {
+    font-family: Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 1.3em;
+}
+
+p {
+    text-indent: 2em;
+    text-align: justify;
+}
+
+p::first-letter {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
 .section1 {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     width: 95%;
+    max-width: 800px;
     margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-style: outset;
     border-radius: 20px;
+    z-index: 1;
 }
 
 .section2 {
@@ -94,12 +135,33 @@ h1 {
     flex-wrap: wrap;
     background-color: white;
     width: 95%;
-
+    max-width: 800px;
     margin-top: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-style: outset;
     border-radius: 20px;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 95%;
+    max-width: 800px;
+    border-style: outset;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    scroll-margin: 15px;
+    border-radius: 20px;
+
+}
+
+.content {
+    height: 400px;
+    overflow: auto;
+    overflow-y: 0;
 }
 
 .avatar {
@@ -146,6 +208,25 @@ h5 {
     margin: auto;
     padding: 5px;
     text-align: center;
+}
+
+.sec1c {
+    display: table-column;
+    font-family: Tahoma, sans-serif;
+    border-radius: 10px;
+    border: solid 3px rgba(114, 191, 206, 0.3);
+    border: solid 3px rgba(114, 191, 206, 0.3);
+    margin: auto;
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    min-height: 250px;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
 }
 
 footer {
