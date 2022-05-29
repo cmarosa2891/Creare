@@ -26,6 +26,7 @@ nav {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    z-index: 3;
 }
 
 .maincontainer {
@@ -132,7 +133,7 @@ li {
 
 .section2 {
     display: flex;
-    flex-wrap: wrap;
+
     background-color: white;
     width: 95%;
     max-width: 800px;
@@ -237,11 +238,123 @@ text-align: center;
     align-items: center;
 }
 
+.galeria {
+    height: calc( 300px + 3em);
+    width: 260px;
+    margin:1em auto;
+    border: 1px solid #555;
+    position: relative;  
+  }
+  
+  .galeria img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s;
+  }
+  
+  .galeria input[type=radio] {
+    position: relative;
+    bottom: calc(-300px - 1.5em);
+    left: .5em;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+    opacity: 1;
+  }
+  .galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
+    opacity: 1;
+  }
+ 
+
+  .contacto {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: red;
+  }
+
+  .contacto input{
+
+      width: 100%;
+      background-color: blue;
+  }
+
+  .formulario{
+      display: flex;
+      flex-direction: column;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .formulario div{
+      display: block;
+  }
+  form input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    height: 1.8em;
+  }
+  form textarea {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    
+  }
+  form button {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    font-weight: bolder;
+  }
+  form button:hover {
+    background: lightcoral;
+  }
+  
+  label {
+    text-align: left;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+  }
+  
+
+  form input:focus {
+    outline: 3px solid lightcoral;
+  }
 footer {
     margin: 10px 10px 10px 10px;
     text-align: center;
-
 }
+
+footer a{
+    color: lightslategray;}
 
 @media screen and (max-width:880px) {
 
